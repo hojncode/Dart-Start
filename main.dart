@@ -1,3 +1,5 @@
 void main() {
-    print ('hello world');
+    var name = "hoho";
+    String name2 = "hoho";
+
 }
