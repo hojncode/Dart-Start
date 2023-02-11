@@ -1,6 +1,10 @@
-void main() {
-  dynamic name; // 해당 변수의 타입을 알 수 없을 경우 사용한다. 필요한 곳에서만 사용할것. 여러가지 타입을 가질 수 있다.
-  if (name is int) {
-    name.floor(); // int일때 올 수 있는 메소드들을 다 보여준다.
-  }
+void main(List<String> args) {
+  String? hh = 'hh';
+  hh = null;
+  // if (hh != null) {
+  //   hh.isNotEmpty;
+  // }
+  hh?.isEmpty; // null 타입도 가질 수 있기때문에 에러가 발생 하지 않는다.
 }
+
+// 변수가 null 타입도 가질 수 있도록 ? 를 추가해준다.
