@@ -1,6 +1,6 @@
 void main() {
-  final name = "hh";
-  name = "hhh"; //! 에러 발생
+  late final String name;
+  //!에러 발생. late 를 사용했기 때문에, name에 값이 할당 되어야 아래 print 가 실행된다.
+  //초기 데이터 없이 먼저 변수를 선언해두고,추후에 api 통신할때 fetch 등에서 많이 사용 됨. (data fetching)
+  print(name);
 }
-
-// 변수 선언시, var 대신 final 을 사용하면 변수 선언 이후엔 수정 할 수 없다.
